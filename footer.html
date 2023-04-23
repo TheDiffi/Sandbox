@@ -4,12 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Footer</title>
+		<script src="./redirect.js"></script>
 	</head>
 	<body>
 		<div class="sandbox-footer">
-			<a onclick="randred()" class="button">home</a>
-			<a onclick="randred()" class="button">NEXT</a>
+			<a onclick="window.location.href = 'davidpenn.de'" class="button">home</a>
+			<a onclick="window.location.href = randSandboxSite();" class="button">NEXT</a>
 		</div>
 	</body>
 	<style>
@@ -38,6 +39,7 @@
 			box-shadow: none;
 			transition: all 0.3s ease;
 			transform: skewX(-10deg);
+			cursor: default;
 		
 		}
 
