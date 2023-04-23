@@ -2,7 +2,7 @@
     //include sites to be displayed in the sandbox here
     sites = ["cats", "text_mask"]
     function randSandboxSite() {
-        window.location.href = "./" + sites[Math.floor(Math.random() * sites.length)];
+        return "./" + sites[Math.floor(Math.random() * sites.length)];
     }
-    randSandboxSite();
+    window.location.href = randSandboxSite();
 </script>

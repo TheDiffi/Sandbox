@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="sandbox-footer">
+			<a onclick="randred()" class="button">home</a>
+			<a onclick="randred()" class="button">NEXT</a>
+		</div>
+	</body>
+	<style>
+		.sandbox-footer {
+			position: fixed;
+			bottom: 2rem;
+			left: 2rem;
+			background-color: rgba(0, 0, 0, 0);
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		.sandbox-footer .button {
+            margin: 1rem;
+			border: 5px solid #2c3e50;
+			color: #2c3e50;
+			display: block;
+			font-family: "trebuchet ms";
+			font-size: 2rem;
+			letter-spacing: 0.1rem;
+			padding: 1rem;
+			position: relative;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+
+		.sandbox-footer .button::before {
+			content: "";
+			background-color: #e26a6a;
+			box-shadow: 10px 10px 0 #f1c40f;
+			position: absolute;
+			left: 0.25rem;
+			top: 0.5rem;
+			height: 102%;
+			width: 102%;
+			z-index: -1;
+			transition: all 0.3s ease;
+		}
+
+		.sandbox-footer .button:hover {
+			color: #fff;
+		}
+
+		.sandbox-footer .button:hover::before {
+			box-shadow: none;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</html>

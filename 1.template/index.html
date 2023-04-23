@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandbox</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    <body>
-        <div class="content">
-            <h1>Welcome to my Homepage!</h1>
-            <p>This page is currently under construction, but will be up shortly.</p>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sandbox</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<h1>Welcome to my Homepage!</h1>
+			<p>This page is currently under construction, but will be up shortly.</p>
+		</div>
 
-        <div class="sandbox-footer">
-            <a onclick="randred()" class="button">About Me</a>
-        </div>
+		<div class="footer">
+			<a onclick="randred()" class="button">About Me</a>
+		</div>
 
-    </body>
-</body>
+		<!-- Include the footer from the "footer.html" file -->
+		<!--#include virtual="../footer.html" -->
+	</body>
+	<script>
+		// Load the footer HTML from the "footer.html" file
+		fetch("../footer.html")
+			.then((response) => response.text())
+			.then((html) => {
+				// Append the footer HTML to the body of the page
+				document.body.insertAdjacentHTML("beforeend", html);
+			})
+			.catch((error) => {
+				// Handle any errors that occur while loading the footer
+				console.error(error);
+			});
+	</script>
 </html>
