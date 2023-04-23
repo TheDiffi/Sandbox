@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="sandbox-footer">
-			<a onclick="window.location.href = 'davidpenn.de'" class="button">home</a>
-			<a onclick="window.location.href = randSandboxSite();" class="button">NEXT</a>
+			<a onclick="window.location.href = 'davidpenn.de'"class="button">home</a>
+			<a onclick="window.location.href = randSandboxSite();" >NEXT</a>
 		</div>
 	</body>
 	<style>
@@ -24,8 +24,9 @@
 			align-items: center;
 		}
 
-		.sandbox-footer .button {
+		.sandbox-footer a {
             margin: 1rem;
+			background-color: #62ce72;
 			border: 3px solid #2c3e50;
 			color: #2c3e50;
 			display: block;
@@ -43,7 +44,8 @@
 		
 		}
 
-		.sandbox-footer .button:hover {
+
+		.sandbox-footer .a:hover {
 			box-shadow: 10px 10px 0 #f1c40f;
 		}
 
