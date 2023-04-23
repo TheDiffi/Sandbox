@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cats.css">
-    <title>Welcome</title>
-</head>
-<body>
-    
-        <div id="cats-container">
-          <div class="cat-card active">
-            <img src="https://cataas.com/cat" alt="Cat" class="image">
-            <div class="overlay">
-              <div class="text-cat">Next Cat</div>
-            </div>
-          </div>
-        </div>
-   
+	<head>
+		<head>
+			<meta charset="UTF-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<link rel="icon" type="image/x-icon" href="../home/assets/david_web.ico" />
+			<title>Sandbox</title>
+			<link rel="stylesheet" href="cats.css" />
+		</head>
+	</head>
+	<body>
+		<div id="cats-container">
+			<div class="cat-card active">
+				<img src="https://cataas.com/cat" alt="Cat" class="image" />
+				<div class="overlay">
+					<div class="text-cat">Next Cat</div>
+				</div>
+			</div>
+		</div>
+	</body>
 
-        <script>
-          // Load the footer HTML from the "footer.html" file
-          fetch("../footer.html")
-            .then((response) => response.text())
-            .then((html) => {
-              // Append the footer HTML to the body of the page
-              document.body.insertAdjacentHTML("beforeend", html);
-            })
-            .catch((error) => {
-              // Handle any errors that occur while loading the footer
-              console.error(error);
-            });
-        </script>
-</body>
-<script src="cats.js"></script>
-
+	<script>
+		// Load the footer HTML from the "footer.html" file
+		fetch("../footer.html")
+			.then((response) => response.text())
+			.then((html) => {
+				// Append the footer HTML to the body of the page
+				document.body.insertAdjacentHTML("beforeend", html);
+			})
+			.catch((error) => {
+				// Handle any errors that occur while loading the footer
+				console.error(error);
+			});
+	</script>
+	<script src="cats.js"></script>
 </html>

@@ -10,7 +10,7 @@
 	<body>
 		<div class="sandbox-footer">
 			<a onclick="window.location.href = 'https:\/\/davidpenn.de'">home</a>
-			<a onclick="window.location.href = 'https:\/\/davidpenn.de/sandbox'" >NEXT</a>
+			<a onclick="window.location.href = '../index.html?' + window.location.pathname.split('/').filter(path => !(!path)).pop()" >NEXT</a>
 		</div>
 	</body>
 
