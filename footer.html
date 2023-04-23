@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<div class="sandbox-footer">
-			<a onclick="randred()" class="button">home</a>
-			<a onclick="randred()" class="button">NEXT</a>
+			<a onclick="randred()" >home</a>
+			<a onclick="randred()" >NEXT</a>
 		</div>
 	</body>
 	<style>
@@ -23,8 +23,9 @@
 			align-items: center;
 		}
 
-		.sandbox-footer .button {
+		.sandbox-footer a {
             margin: 1rem;
+			background-color: #62ce72;
 			border: 3px solid #2c3e50;
 			color: #2c3e50;
 			display: block;
@@ -42,11 +43,11 @@
 		}
 
 
-		.sandbox-footer .button:hover {
+		.sandbox-footer a:hover {
 			box-shadow: 10px 10px 0 #f1c40f;
 		}
 
-		/* .sandbox-footer .button:hover::before {
+		/* .sandbox-footer a::before {
 			
 			left: 0;
 			top: 0;
