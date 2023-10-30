@@ -17,3 +17,25 @@ function nextSandboxSite() {
 
 	return "./" + availableSites[currentIndex + 1];
 }
+
+function nextSandboxSite() {
+	// get the index of the current project
+	const currentIndex = availableSites.indexOf(lastSite) || 0;
+
+	return "./" + availableSites[currentIndex + 1];
+}
+
+
+function injectFooter(body){
+	// Load the footer HTML from the "footer.html" file
+	fetch("./footer.html")
+	.then((response) => response.text())
+	.then((html) => {
+		// Append the footer HTML to the body of the page
+		body.insertAdjacentHTML("beforeend", html);
+	})
+	.catch((error) => {
+		// Handle any errors that occur while loading the footer
+		console.error(error);
+	});
+}
