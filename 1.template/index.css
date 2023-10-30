@@ -1,10 +1,11 @@
 html {
     color-scheme: light dark;
+    height: 100%;
 }
 
 body {
     width: 35em;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
     font-family: Tahoma, Verdana, Arial, sans-serif;

@@ -7,10 +7,14 @@
 		<title>Footer</title>
 		
 	</head>
+	<script src="./redirect.js"></script>
+
 	<body>
 		<div class="sandbox-footer">
 			<a onclick="window.location.href = 'https:\/\/davidpenn.de'">home</a>
-			<a onclick="window.location.href = '../index.html?' + window.location.pathname.split('/').filter(path => !(!path)).pop()" >NEXT</a>
+			<a onclick="window.location.href = '../index.html?' + window.location.pathname.split('/').filter(path => !(!path)).pop()" >RANDOM</a>
+			
+
 		</div>
 	</body>
 
@@ -41,7 +45,7 @@
 			box-shadow: none;
 			transition: all 0.3s ease;
 			transform: skewX(-10deg);
-			cursor: default;
+			cursor: pointer;
 		
 		}
 

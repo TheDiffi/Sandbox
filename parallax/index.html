@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="../home/assets/david_web.ico" />
+		<title>Sandbox</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="title">Drag</div>
+		<div class="content" draggable="false">
+			<div id="slideshow" draggable="false" data-last-pos="50">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1697910405340-70ece17804fd" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1698322281610-0e4d97c90ec7" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1698434156440-df22e73ff5bd" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1698598359748-de9eecbb3afd" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1671394033488-a3ce85f1076a" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1695408249017-f056cbf795e1" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1697835919559-3bb3238477a5" alt="">
+				<img draggable="false" class="image" src="https://images.unsplash.com/photo-1697666399965-0b5340fd6109" alt="">
+
+
+			</div>
+		</div>
+
+		
+
+		
+	</body>
+	<script src="index.js"></script>
+
+	<script>
+		// Load the footer HTML from the "footer.html" file
+		fetch("../footer.html")
+			.then((response) => response.text())
+			.then((html) => {
+				// Append the footer HTML to the body of the page
+				document.body.insertAdjacentHTML("beforeend", html);
+			})
+			.catch((error) => {
+				// Handle any errors that occur while loading the footer
+				console.error(error);
+			});
+	</script>
+</html>
