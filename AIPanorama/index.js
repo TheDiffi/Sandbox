@@ -89,3 +89,14 @@ next.addEventListener("click", () => {
     panorama.loadTexture(worldPaths[index]);
 });
 
+
+
+//-----------------------------------------
+
+document.addEventListener("mousedown", removeTitle);
+
+function removeTitle(){
+	document.getElementById("title").remove();
+	document.removeEventListener("mousedown", removeTitle);
+}
+
