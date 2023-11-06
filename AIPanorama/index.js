@@ -21,7 +21,7 @@ controls.autoRotate = true;
 controls.autoRotateSpeed = 0.05;
 controls.enableZoom = false;
 controls.enablePan = false;
-controls.rotateSpeed = 0.3;
+controls.rotateSpeed = -0.3;
 
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
