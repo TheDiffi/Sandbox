@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="../home/assets/david_web.ico" />
+		<title>Sandbox</title>
+		<link rel="stylesheet" href="index.css" />
+		<script type="module" src="index.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div id="controls-container">
+				<div class="control" id="prev"><</div>
+				<div class="control" id="next">></div>
+
+			</div>
+		</div>
+		<div class="content">
+			<div id="pan-container"></div>
+		</div>
+		
+
+		
+	</body>
+	<script>
+		// Load the footer HTML from the "footer.html" file
+		fetch("../footer.html")
+			.then((response) => response.text())
+			.then((html) => {
+				// Append the footer HTML to the body of the page
+				document.body.insertAdjacentHTML("beforeend", html);
+			})
+			.catch((error) => {
+				// Handle any errors that occur while loading the footer
+				console.error(error);
+			});
+	</script>
+</html> 

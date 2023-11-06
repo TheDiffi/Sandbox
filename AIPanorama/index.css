@@ -1,0 +1,86 @@
+html {
+    color-scheme: light dark;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+}
+
+.centered-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.button {
+    background-color: #7668c8;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: #433b6f;
+    color: white;
+}
+
+.test-box{
+    background-color: burlywood;
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------- */
+
+body{
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+} 
+
+canvas { display: block;}
+
+#controls-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control{
+    background-color: rgba(0, 0, 0, 0);
+    width: 5vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.control:hover{
+    background-color: rgba(0, 0, 0, 0.152);
+    color: white;
+}
