@@ -66,25 +66,26 @@ class PanScene {
 	}
 }
 
-const panorama = new PanScene("watercolor1.png");
+
+const worldPaths = ["watercolor1.jpg", "pana.jpg", "watercolor2.jpg"];
+let index = 0;
+const panorama = new PanScene(worldPaths[index]);
 
 // slideshow controls
-const worldPaths = ["watercolor1.png", "pana.jpg", "watercolor2.png"];
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
-let index = 0;
 prev.addEventListener("click", () => {
     index--;
     if (index < 0) {
         index = worldPaths.length - 1;
     }
-    panorama = new PanScene(worldPaths[index]);
+	panorama.loadTexture(worldPaths[index]);
 });
 next.addEventListener("click", () => {
     index++;
     if (index >= worldPaths.length) {
         index = 0;
     }
-    panorama = new PanScene(worldPaths[index]);
+    panorama.loadTexture(worldPaths[index]);
 });
 
