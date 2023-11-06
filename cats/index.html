@@ -11,6 +11,7 @@
 		</head>
 	</head>
 	<body>
+		<div id="title">Cats!</div>
 		<div id="cats-container">
 			<div class="cat-card active">
 				<img src="https://cataas.com/cat" alt="Cat" class="image" />
@@ -20,19 +21,5 @@
 			</div>
 		</div>
 	</body>
-
-	<script>
-		// Load the footer HTML from the "footer.html" file
-		fetch("../footer.html")
-			.then((response) => response.text())
-			.then((html) => {
-				// Append the footer HTML to the body of the page
-				document.body.insertAdjacentHTML("beforeend", html);
-			})
-			.catch((error) => {
-				// Handle any errors that occur while loading the footer
-				console.error(error);
-			});
-	</script>
 	<script src="cats.js"></script>
 </html>

@@ -22,20 +22,5 @@
 			<div id="pan-container"></div>
 		</div>
 		
-
-		
 	</body>
-	<script>
-		// Load the footer HTML from the "footer.html" file
-		fetch("../footer.html")
-			.then((response) => response.text())
-			.then((html) => {
-				// Append the footer HTML to the body of the page
-				document.body.insertAdjacentHTML("beforeend", html);
-			})
-			.catch((error) => {
-				// Handle any errors that occur while loading the footer
-				console.error(error);
-			});
-	</script>
 </html> 

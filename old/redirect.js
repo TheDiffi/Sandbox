@@ -1,5 +1,5 @@
 //include sites to be displayed in the sandbox here
-sites = ["cats", "text_mask", "parallax", "AIPanorama"];
+const sites = ["cats", "text_mask", "parallax", "AIPanorama"];
 
 // Get the name of the current project folder
 const lastSite = window.location.search.substring(1);
