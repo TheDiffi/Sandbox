@@ -66,10 +66,10 @@ class PanScene {
 	}
 }
 
-const panorama = new PanScene("pana.jpg");
+const panorama = new PanScene("watercolor1.png");
 
 // slideshow controls
-const worldPaths = ["pana.jpg","watercolor1.png", "watercolor2.png"];
+const worldPaths = ["watercolor1.png", "pana.jpg", "watercolor2.png"];
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 let index = 0;
