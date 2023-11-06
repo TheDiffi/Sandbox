@@ -70,7 +70,7 @@ class PanScene {
 }
 
 
-const worldPaths = ["watercolor1-original.png", "pana.jpg", "watercolor2.jpg", "tundra1.jpg", "abstract1.jpg"];
+const worldPaths = ["watercolor1.jpg", "pana.jpg", "watercolor2.jpg", "tundra1.jpg", "abstract1.jpg"];
 let index = 0;
 const panorama = new PanScene(worldPaths[index]);
 
