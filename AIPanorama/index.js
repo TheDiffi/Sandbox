@@ -1,7 +1,8 @@
 import { OrbitControls } from "./js/OrbitControls.js";
 import * as THREE from "./js/three.module.js";
 
-//---- Credit to: https://www.youtube.com/watch?feature=shared&v=v2eLLBUxQiQ ----//
+//---- Inspiration from: https://www.youtube.com/watch?feature=shared&v=v2eLLBUxQiQ ----//
+//---- Created with the amazing work over at https://skybox.blockadelabs.com/ ----//
 
 // Select the container for the scene
 const container = document.getElementById("pan-container");
@@ -23,6 +24,7 @@ controls.minDistance = 0;
 controls.maxDistance = 400;
 controls.enableDamping = true;
 controls.enableZoom = true;
+controls.zoomSpeed = 10;
 controls.enablePan = false;
 controls.rotateSpeed = -0.25;
 
@@ -70,8 +72,8 @@ class PanScene {
 }
 
 
-const worldPaths = ["watercolor1.jpg", "pana.jpg", "watercolor2.jpg", "tundra1.jpg", "abstract1.jpg"];
-let index = 0;
+const worldPaths = ["watercolor1.jpg", "pana.jpg", "watercolor2.jpg", "tundra1.jpg", "snow2.jpg", "snow3.jpg", "cyberpunk1.jpg"];
+let index = 5;
 const panorama = new PanScene(worldPaths[index]);
 
 // slideshow controls

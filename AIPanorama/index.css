@@ -93,12 +93,13 @@ canvas { display: block;}
 
 .control{
     background-color: rgba(0, 0, 0, 0);
-    width: 5vw;
+    width: 6vw;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
+    font-size: 1.5rem;
 }
 
 .control:hover{
