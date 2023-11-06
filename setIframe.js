@@ -16,7 +16,6 @@ function setNextSite() {
 }
 
 
-
 function injectFooter(body){
 	// Load the footer HTML from the "footer.html" file
 	fetch("./footer.html")
