@@ -7,7 +7,7 @@ import * as THREE from "./js/three.module.js";
 const container = document.getElementById("pan-container");
 
 // Create the camera, and renderer
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer();
 
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -18,10 +18,13 @@ camera.position.set(0, 0, 0.1);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
-controls.autoRotateSpeed = 0.05;
-controls.enableZoom = false;
+controls.autoRotateSpeed = 0.01;
+controls.minDistance = 0;
+controls.maxDistance = 400;
+controls.enableDamping = true;
+controls.enableZoom = true;
 controls.enablePan = false;
-controls.rotateSpeed = -0.3;
+controls.rotateSpeed = -0.25;
 
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
