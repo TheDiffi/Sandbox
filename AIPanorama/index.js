@@ -20,11 +20,8 @@ camera.position.set(0, 0, 0.1);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.autoRotate = true;
 controls.autoRotateSpeed = 0.01;
-controls.minDistance = 0;
-controls.maxDistance = 400;
+controls.enableZoom = false;
 controls.enableDamping = true;
-controls.enableZoom = true;
-controls.zoomSpeed = 10;
 controls.enablePan = false;
 controls.rotateSpeed = -0.25;
 
@@ -93,7 +90,6 @@ next.addEventListener("click", () => {
     }
     panorama.loadTexture(worldPaths[index]);
 });
-
 
 
 //-----------------------------------------
