@@ -38,7 +38,7 @@ body {
     color: white;
 }
 
-.test-box{
+.test-box {
     background-color: burlywood;
     border: 2px solid red;
     width: 100%;
@@ -59,7 +59,7 @@ body {
     box-shadow: none;
     transition: all 0.3s ease;
     cursor: default;
-    
+
     background-color: rgba(0, 0, 0, 0.432);
 
     z-index: 100;
@@ -67,7 +67,7 @@ body {
 
 /* -------------------------------------- */
 
-body{
+body {
     overflow: hidden;
 }
 
@@ -78,20 +78,38 @@ body{
     top: 0;
     left: 0;
     cursor: move;
-} 
 
-canvas { display: block;}
+}
 
-#controls-container{
+.pan-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: move;
+
+}
+
+canvas {
+    display: block;
+}
+
+#controls-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    pointer-events: none;
+
 }
 
-.control{
+.control {
     background-color: rgba(0, 0, 0, 0);
     width: 6vw;
     height: 100%;
@@ -100,9 +118,26 @@ canvas { display: block;}
     justify-content: center;
     z-index: 100;
     font-size: 1.5rem;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
-.control:hover{
+.control:hover {
     background-color: rgba(0, 0, 0, 0.327);
     color: white;
+}
+
+.sphere {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    -moz-ransform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
 }
