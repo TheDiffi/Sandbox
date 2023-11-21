@@ -73,7 +73,7 @@ class PanScene {
 
 
 const worldPaths = ["watercolor1.jpg", "pana.jpg", "watercolor2.jpg", "tundra1.jpg", "snow2.jpg", "snow3.jpg", "cyberpunk1.jpg"];
-let index = 5;
+let index = 4;
 const panorama = new PanScene(worldPaths[index]);
 
 // slideshow controls
