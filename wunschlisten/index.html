@@ -12,12 +12,13 @@
 	<body>
 		<div class="content">
 			<h1>Wunschlisten</h1>
-			<Wunschliste name="tata"> Tatas Wunschliste </Wunschliste>
-			<Wunschliste name="mama"> Mamas Wunschliste </Wunschliste>
-			<Wunschliste name="noe"> Noes Wunschliste </Wunschliste>
-			<Wunschliste name="david"> Davids Wunschliste </Wunschliste>
-			<Wunschliste name="miriam"> Miriams Wunschliste </Wunschliste>
-			<Wunschliste name="aaron"> Aarons Wunschliste </Wunschliste>
+			
+			<Wunschliste name="Tata"></Wunschliste>
+			<Wunschliste name="Mama"></Wunschliste>
+			<Wunschliste name="Noe"></Wunschliste>
+			<Wunschliste name="David"></Wunschliste>
+			<Wunschliste name="Miriam"></Wunschliste>
+			<Wunschliste name="Aaron"></Wunschliste>
 
 
 		</div>
@@ -34,7 +35,7 @@
 		}
 
 		function gotoList(name) {
-			window.location.href = links[name];
+			window.location.href = links[name.tolowerCase()];
 		}
 
 		document.querySelectorAll("Wunschliste").forEach((item) => {

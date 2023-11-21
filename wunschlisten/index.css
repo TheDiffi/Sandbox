@@ -80,27 +80,54 @@ body {
 
 /* -------------------------------------- */
 
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 35em;
+    max-width: 100%;
+}
 
 Wunschliste{
     background-color: #7668c8;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
     margin: 4px 2px;
+    position: relative;
     cursor: pointer;
-    transition: all 0.3s ease-out;
-    transform: scale(1);
-    width: 60%;
+    transition: all 0.5s ease-out;
+    width: 70%;
+    flex-grow: 1;
 
 }
 
 Wunschliste:hover {
     background-color: #644fd6;
     color: white;
-    transform: scale(1.05);
+    flex-grow: 6;
+}
+
+Wunschliste::before{
+    content: '' attr(name) 's Wunschliste';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+
+    
 }
 
