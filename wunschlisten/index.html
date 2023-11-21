@@ -26,16 +26,16 @@
 	<script>
 
 		let links =  {
-			tata:"https://shared-lists.com/list/show/300fa5be-e81a-494c-972b-0c41377feff7/BDKhJQXKNfB1FEqkxvhTwBaOhmfUQhaJccpYBxm2vB4Aj31XmllbGFtnjifLK40y3IMQ5Edo3hDw5hnqsobF3jD4Z8l5sNYpas1RPGo3L6qruVpcmzMRXTpGajLqLKKT",
-			mama:"https://shared-lists.com/list/show/69470f11-f741-405b-ae0c-2f752057e4b7/Lt3fXdaxrLr6i3mj6OQ41mBKvegBs4QnDRgyHhJ6NIJxWYLeDHnSKEm1UnqvEqEMbSRfpI5OVGZohQIUmXnYyG5vXHPVF3qMx550oisNh5kysdDGBnIwrP09IPPYDEat",
-			noe:"https://shared-lists.com/list/show/8cfcea04-99e1-4640-96ab-ee33bd4738e8/SdJaswt5SOJ4wrpaUfgprxxwvSJZkoMiBHAI0tzYxodBYqs9o3LPeCE0Vkh9kcVrQlmwZpqHyB3gFZu23nGjN2YG0vaJGvll0nUOredrss3PZgfMHyb6j6w2NaJj6nr0",
-			david:"https://shared-lists.com/list/show/3db2f58e-33e5-47aa-93ea-c6fde3888863/o3L2obElLkak5blQBI532G0EGGDcLkx5kMO8NJzMgfP0dKS2egklaxDLRYPfiwFWFugoZvoUxCREu6udxAoi7xa5s6MxYguDOe8UCdBjXXxK3peYZuOUBbPpdR0d5TUD",
-			miriam:"https://shared-lists.com/list/show/19a1f511-4fd2-4eec-acd0-391a8d6f8b5e/jun771yuYjNhKNPGSM9Ue8yQOYFoF9d9UWOAOlW6YSMUgIGSOaFMEQvHJuBakiv1UJIg56cTXmidmCWUIjshuNcLMo0hPS2Yjj83uN631U3p5bap5qAqKbAASASPzb2G",
-			aaron:"https://shared-lists.com/list/show/580af45d-2d46-4bbd-b21e-d7368ec7ab6a/48rGeVVidELZX9oxHCfdNsIr1qdMpfSMymcq31OR82Es2fgh0K7nHDzh2PMvnDZYdT7dKgCfHNotv44Nl8ahN8oM4nXXLnDNPTxjHGsSTw4lQhbVkF3B48pb4VFJHCbQ"
+			Tata:"https://shared-lists.com/list/show/300fa5be-e81a-494c-972b-0c41377feff7/BDKhJQXKNfB1FEqkxvhTwBaOhmfUQhaJccpYBxm2vB4Aj31XmllbGFtnjifLK40y3IMQ5Edo3hDw5hnqsobF3jD4Z8l5sNYpas1RPGo3L6qruVpcmzMRXTpGajLqLKKT",
+			Mama:"https://shared-lists.com/list/show/69470f11-f741-405b-ae0c-2f752057e4b7/Lt3fXdaxrLr6i3mj6OQ41mBKvegBs4QnDRgyHhJ6NIJxWYLeDHnSKEm1UnqvEqEMbSRfpI5OVGZohQIUmXnYyG5vXHPVF3qMx550oisNh5kysdDGBnIwrP09IPPYDEat",
+			Noe:"https://shared-lists.com/list/show/8cfcea04-99e1-4640-96ab-ee33bd4738e8/SdJaswt5SOJ4wrpaUfgprxxwvSJZkoMiBHAI0tzYxodBYqs9o3LPeCE0Vkh9kcVrQlmwZpqHyB3gFZu23nGjN2YG0vaJGvll0nUOredrss3PZgfMHyb6j6w2NaJj6nr0",
+			David:"https://shared-lists.com/list/show/3db2f58e-33e5-47aa-93ea-c6fde3888863/o3L2obElLkak5blQBI532G0EGGDcLkx5kMO8NJzMgfP0dKS2egklaxDLRYPfiwFWFugoZvoUxCREu6udxAoi7xa5s6MxYguDOe8UCdBjXXxK3peYZuOUBbPpdR0d5TUD",
+			Miriam:"https://shared-lists.com/list/show/19a1f511-4fd2-4eec-acd0-391a8d6f8b5e/jun771yuYjNhKNPGSM9Ue8yQOYFoF9d9UWOAOlW6YSMUgIGSOaFMEQvHJuBakiv1UJIg56cTXmidmCWUIjshuNcLMo0hPS2Yjj83uN631U3p5bap5qAqKbAASASPzb2G",
+			Aaron:"https://shared-lists.com/list/show/580af45d-2d46-4bbd-b21e-d7368ec7ab6a/48rGeVVidELZX9oxHCfdNsIr1qdMpfSMymcq31OR82Es2fgh0K7nHDzh2PMvnDZYdT7dKgCfHNotv44Nl8ahN8oM4nXXLnDNPTxjHGsSTw4lQhbVkF3B48pb4VFJHCbQ"
 		}
 
 		function gotoList(name) {
-			window.location.href = links[name.tolowerCase()];
+			window.location.href = links[name];
 		}
 
 		document.querySelectorAll("Wunschliste").forEach((item) => {
