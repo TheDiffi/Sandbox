@@ -16,7 +16,7 @@ jobs:
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
         ssh-keyscan -H davidpenn.de > ~/.ssh/known_hosts
     - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@davidpenn.de "cd /usr/share/nginx/homepage/sandbox && git pull && exit"
+      run: ssh admin@davidpenn.de "cd /usr/share/nginx/homepage/sandbox && git pull && exit"
     - name: cleanup
       run: rm -rf ~/.ssh
                 
