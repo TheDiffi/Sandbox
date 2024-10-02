@@ -1,0 +1,228 @@
+:root {
+    --color-main: #7668c8;
+    --color-dark: #433b6f;
+    --color-light: #ecedce;
+
+    --card-border-radius: 3%;
+    --card-shift-border: 20%;
+    --box-shadow-offset-hack: 10px;
+    /* may nee to be adjusted if --card-border-radius is changed*/
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: light dark;
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease-out;
+    font-family: Consolas, monaco, monospace;
+}
+
+body {
+    width: 35em;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Consolas, monaco, monospace;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+.button {
+    background-color: var(--color-main);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: #433b6f;
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    cursor: default;
+
+}
+
+.test-box {
+    background-color: burlywood;
+    border: 2px solid red;
+    width: 100%;
+    min-width: 20px;
+    height: 100%;
+    min-height: 20px;
+}
+
+/* -------------------------------------- */
+/* div {
+    outline: deeppink 1px solid;
+
+}
+ */
+.content {
+    height: 50%;
+    margin-top: 50px;
+    background-color: var(--color-light);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-container {
+    width: 70%;
+    aspect-ratio: 1.5/1;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+.card-container>.mid {
+    flex-basis: calc(var(--card-border-radius) * 2);
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-container>.mid>.top-notch {
+    --aspect-factor: 6;
+    --overlap: -10px;
+
+    width: 100%;
+    aspect-ratio: 1/var(--aspect-factor);
+    margin-top: calc((-100% * var(--aspect-factor)) + 50% - var(--card-shift-border));
+    transform: translateY(calc(-1 * var(--overlap)));
+
+    overflow: hidden;
+
+}
+
+.card-container>.mid>.bottom-notch {
+    --aspect-factor: 4;
+    --overlap: 9px;
+
+    width: 100%;
+    aspect-ratio: 1/var(--aspect-factor);
+    margin-bottom: calc((-100% * var(--aspect-factor)) + 50% - var(--card-shift-border));
+    transform: translateY(calc(-1 * var(--overlap)));
+
+    overflow: hidden;
+
+}
+
+.top-notch>.top-notch-inner {
+    height: 100%;
+    width: 100%;
+    transform: translateY(var(--overlap));
+    background-color: transparent;
+    border-bottom-left-radius: 100% calc(100% / var(--aspect-factor));
+    border-bottom-right-radius: 100% calc(100% / var(--aspect-factor));
+    box-shadow: 0 var(--box-shadow-offset-hack) 0 0 var(--color-main);
+
+}
+
+
+
+.bottom-notch>.bottom-notch-inner {
+    height: 100%;
+    width: 100%;
+    transform: translateY(var(--overlap));
+    background-color: transparent;
+    border-top-left-radius: 100% calc(100% / var(--aspect-factor));
+    border-top-right-radius: 100% calc(100% / var(--aspect-factor));
+    box-shadow: 0 calc(-1 * var(--box-shadow-offset-hack)) 0 0 var(--color-main);
+
+}
+
+
+
+.card-container>.mid>.center {
+    flex: 1;
+    width: 120%;
+    background-color: var(--color-main);
+    position: relative;
+    z-index: 1;
+}
+
+.center>.center-line {
+    --line-margin: 5px;
+    position: absolute;
+    top: var(--line-margin);
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 2px;
+    height: calc(100% - (var(--line-margin) * 2));
+    background: repeating-linear-gradient(to bottom,
+            var(--color-dark),
+            var(--color-dark) 4%,
+            var(--color-main) 4%,
+            var(--color-main) 8%);
+    
+}
+
+
+
+.card-container>.left {
+    flex: 2.5;
+    height: 100%;
+    background-color: var(--color-main);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-container>.left>h2 {
+    margin: 0;
+    padding: 20px;
+    width: 50%;
+    color: var(--color-light);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.card-container>.right {
+    flex: 1;
+    height: 100%;
+    background-color: var(--color-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
