@@ -190,7 +190,7 @@ a {
             var(--color-dark) 4%,
             var(--color-main) 4%,
             var(--color-main) 8%);
-    
+
 }
 
 
@@ -199,7 +199,6 @@ a {
     flex: 2.5;
     height: 100%;
     background-color: var(--color-main);
-    padding: 20px;
     display: flex;
     flex-direction: column;
 
@@ -207,14 +206,16 @@ a {
 
 .card-container>.left>h2 {
     margin: 0;
-    padding: 20px;
-    width: 50%;
+    padding: 15%;
     color: var(--color-light);
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
