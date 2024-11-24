@@ -1,5 +1,5 @@
 //include sites to be displayed in the sandbox here
-const sites = ["cats", "text_mask", "parallax", "aIPanorama", "invertedBorder" ];
+const sites = ["cats", "text_mask", "parallax", "AIPanorama", "invertedBorder" ];
 const iframe = document.getElementById("iframe");
 let currentSite = "cats";
 
